@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Products | GALAXY NOVA</title>
+    <meta name="description" content="GALAXY NOVA — Smartphone Experience">
+    <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="solid">
+    <!-- Navbar (sama di semua halaman) -->
+    <header class="nav" id="nav">
+      <div class="nav__in">
+        <a class="logo" href="index.html" aria-label="GALAXY NOVA beranda"><span class="logo__mark">GALAXY</span><span class="logo__sub">NOVA</span></a>
+        <nav id="menu" class="menu" aria-label="Menu utama">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" aria-current="page">Products</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About Galaxy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav__tools">
+          <button class="icon-btn" data-toast="Pencarian belum aktif (demo)" aria-label="Cari">
+            <svg viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="m20 20-4-4"/>
+            </svg>
+          </button>
+          <button class="icon-btn" data-toast="Keranjang kosong (demo)" aria-label="Keranjang">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 7h14l-1.5 11h-11zM9 7a3 3 0 0 1 6 0"/>
+            </svg>
+          </button>
+          <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section: Koleksi Galaxy -->
+      <section class="phead">
+        <div class="wrap">
+          <h1>Koleksi Galaxy</h1>
+          <p>Harga dan spesifikasi lengkap selalu cek di situs resmi Samsung.</p>
+          <div class="filters" role="group" aria-label="Filter kategori">
+            <button class="chip is-on" data-f="all">Semua</button>
+            <button class="chip" data-f="galaxys">Galaxy S</button>
+            <button class="chip" data-f="ultra">Seri Ultra</button>
+            <button class="chip" data-f="foldable">Lipat (Z Series)</button>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Perbandingan sekilas -->
+      <section class="sec">
+        <div class="wrap">
+          <div class="cards" id="cards"></div>
+          <p class="empty" id="empty" hidden>Tidak ada produk untuk filter ini. Pilih kategori lain.</p>
+        </div>
+      </section>
+      <!-- Jendela detail produk -->
+      <dialog id="dlg" class="dlg">
+        <button class="dlg__x" id="dlgx" aria-label="Tutup">×</button>
+        <div class="dlg__in" id="dlgc"></div>
+      </dialog>
+      <!-- Section: Perbandingan sekilas -->
+      <section class="sec sec--alt">
+        <div class="wrap">
+          <h2 class="rv">Perbandingan sekilas</h2>
+          <p class="rv">Hanya fitur yang kami yakini umum diketahui. Cek spesifikasi lengkap di situs resmi.</p>
+          <div class="tblw rv">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Galaxy AI</th>
+                  <th>Layar Lipat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Galaxy S26 Ultra</td>
+                  <td>Ya</td>
+                  <td>Tidak</td>
+                </tr>
+                <tr>
+                  <td>Galaxy S26</td>
+                  <td>Ya</td>
+                  <td>Tidak</td>
+                </tr>
+                <tr>
+                  <td>Galaxy Z Fold8 / Flip8</td>
+                  <td>Ya</td>
+                  <td>Ya</td>
+                </tr>
+                <tr>
+                  <td>Galaxy S25 Ultra</td>
+                  <td>Ya</td>
+                  <td>Tidak</td>
+                </tr>
+                <tr>
+                  <td>Galaxy S24</td>
+                  <td>Ya</td>
+                  <td>Tidak</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Tips sebelum membeli -->
+      <section class="sec">
+        <div class="wrap">
+          <h2 class="rv">Tips sebelum membeli</h2>
+          <ol class="steps">
+            <li class="rv">
+              <h3>Coba ukuran dan bobotnya</h3>
+              <p>Jika bisa, pegang langsung di toko selama beberapa menit.</p>
+            </li>
+            <li class="rv">
+              <h3>Pikirkan penggunaan utama</h3>
+              <p>Foto, kerja, atau santai di rumah menentukan fitur yang penting.</p>
+            </li>
+            <li class="rv">
+              <h3>Periksa garansi</h3>
+              <p>Pastikan Anda membeli dari penjual resmi agar garansi berlaku.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Section: FAQ produk -->
+      <section class="sec sec--alt">
+        <div class="wrap narrow">
+          <h2 class="rv">FAQ produk</h2>
+          <div class="faq">
+            <details class="rv">
+              <summary>Kenapa harganya 'Check Price'?</summary>
+              <p>Harga berbeda tiap toko dan waktu. Anda bisa mengubahnya di script.js.</p>
+            </details>
+            <details class="rv">
+              <summary>Dari mana foto produknya?</summary>
+              <p>Dari file yang Anda sediakan. Ganti lewat folder assets/images/products.</p>
+            </details>
+            <details class="rv">
+              <summary>Apa beda seri S dan seri Z?</summary>
+              <p>Seri S berbentuk ponsel biasa, sedangkan seri Z (Fold dan Flip) bisa dilipat. Bandingkan di situs resmi.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Galeri -->
+      <section class="sec">
+        <div class="wrap">
+          <h2 class="rv">Galeri</h2>
+          <div class="gallery">
+            <figure class="rv"><img src="assets/images/gallery/galaxy-s23-trio.jpg" alt="Tiga ponsel Galaxy dengan latar gelap" loading="lazy"></figure>
+            <figure class="rv"><img src="assets/images/gallery/galaxy-s26-series.jpg" alt="Poster seri Galaxy S26 dalam beberapa warna" loading="lazy"></figure>
+            <figure class="rv"><img src="assets/images/gallery/galaxy-foldables.jpg" alt="Galaxy Z Fold8, Fold8 Ultra, dan Flip8 dipegang tangan" loading="lazy"></figure>
+            <figure class="rv"><img src="assets/images/gallery/galaxy-s26-ultra-box.jpg" alt="Galaxy S26 Ultra ungu dengan S Pen dan kemasannya" loading="lazy"></figure>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Butuh bantuan memilih? -->
+      <section class="cta">
+        <div class="wrap">
+          <h2 class="rv">Butuh bantuan memilih?</h2>
+          <p class="rv">Kirim pertanyaan Anda lewat halaman kontak.</p>
+          <a class="btn btn--red rv" href="contact.html">Hubungi kami</a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <strong>GALAXY NOVA</strong>
+        <p>Kenali lebih dekat dunia Samsung Galaxy bersama GALAXY NOVA. Dibuat untuk berbagi informasi dan mengenal teknologi lebih jauh.</p>
+        <p>📍 lokasi : indonesia</p>
+        <a
+        href="https://maps.google.com/?q=samsung+indonesia"
+        target="_blank">lihat lokasi di google maps</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="about.html">About Galaxy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

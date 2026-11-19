@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | GALAXY NOVA</title>
+    <meta name="description" content="GALAXY NOVA — Smartphone Experience">
+    <link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Manrope:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="is-home">
+
+  <div id="novaIntro">
+  <div class="nova-stars"></div>
+
+  <div class="nova-intro-content">
+    <span class="nova-orbit">✦　✧　✦</span>
+
+    <p class="nova-eyebrow">WELCOME TO A NEW UNIVERSE</p>
+
+    <h1>GALAXY <span>NOVA</span></h1>
+
+    <p class="nova-tagline">
+      A universe of possibilities.
+    </p>
+
+    <button id="enterGalaxy" type="button">
+      EXPLORE GALAXY <span>↗</span>
+    </button>
+
+    <p class="nova-hint">YOUR JOURNEY STARTS HERE</p>
+  </div>
+</div>
+
+    <!-- Navbar (sama di semua halaman) -->
+    <header class="nav" id="nav">
+      <div class="nav__in">
+        <a class="logo" href="index.html" aria-label="GALAXY NOVA beranda"><span class="logo__mark">GALAXY</span><span class="logo__sub">NOVA</span></a>
+        <nav id="menu" class="menu" aria-label="Menu utama">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="about.html">About Galaxy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav__tools">
+          <button class="icon-btn" data-toast="Pencarian belum aktif (demo)" aria-label="Cari">
+            <svg viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="m20 20-4-4"/>
+            </svg>
+          </button>
+          <button class="icon-btn" data-toast="Keranjang kosong (demo)" aria-label="Keranjang">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 7h14l-1.5 11h-11zM9 7a3 3 0 0 1 6 0"/>
+            </svg>
+          </button>
+          <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Section: EXPLORE YOUR GALAXY. -->
+      <section class="hero">
+        <img class="hero__fallback" src="assets/images/hero/hero-galaxy.jpg" alt="">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/videos/hero.webm" type="video/webm">
+          <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero__shade"></div>
+        <div class="hero__c">
+          <h1 class="split" aria-label="EXPLORE YOUR GALAXY."><span>EXPLORE</span> <span>YOUR</span> <span>GALAXY.</span></h1>
+          <p class="hero__sub">Bold design. Sharper camera. Galaxy AI.</p>
+          <div class="btns">
+            <a class="btn btn--red" href="products.html">EXPLORE GALAXY</a>
+            <a class="btn btn--ghost" href="about.html">DISCOVER SAMSUNG</a>
+          </div>
+        </div>
+        <div class="eq" aria-hidden="true">
+          <i style="--d:0.00s"></i>
+          <i style="--d:0.13s"></i>
+          <i style="--d:0.26s"></i>
+          <i style="--d:0.39s"></i>
+          <i style="--d:0.52s"></i>
+          <i style="--d:0.65s"></i>
+          <i style="--d:0.78s"></i>
+          <i style="--d:0.91s"></i>
+          <i style="--d:1.04s"></i>
+          <i style="--d:1.17s"></i>
+          <i style="--d:1.30s"></i>
+          <i style="--d:1.43s"></i>
+          <i style="--d:1.56s"></i>
+          <i style="--d:1.69s"></i>
+        </div>
+        <a class="scroll" href="#intro" aria-label="Gulir ke bawah"><span></span></a>
+      </section>
+      <!-- Section: Dirancang untuk momen yang ingin Anda abadikan. -->
+      <section class="sec" id="intro">
+        <div class="wrap grid2">
+          <div class="rv">
+            <h2>Dirancang untuk momen yang ingin Anda abadikan.</h2>
+          </div>
+          <div class="rv">
+            <p>Dari seri S yang ringkas hingga ponsel lipat yang fleksibel, dari pemakaian harian hingga kerja seharian — jelajahi koleksi Galaxy dan pelajari teknologi di baliknya.</p>
+            <p>
+              <a class="link" href="technology.html">Lihat teknologinya</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Pilih sesuai cara Anda memakai -->
+      <section class="sec sec--alt">
+        <div class="wrap">
+          <h2 class="rv">Pilih sesuai cara Anda memakai</h2>
+          <div class="trio">
+            <a class="tile rv" href="products.html">
+              <img src="assets/images/products/galaxy-s26-ultra-back.jpg" alt="Galaxy S26 Ultra tampak belakang dengan S Pen" loading="lazy">
+              <h3>Flagship &amp; Ultra</h3>
+              <p>Seri teratas dengan deretan kamera dan S Pen.</p>
+            </a>
+            <a class="tile rv" href="products.html">
+              <img src="assets/images/products/galaxy-foldables.jpg" alt="Galaxy Z Fold8, Fold8 Ultra, dan Flip8 dalam beberapa warna" loading="lazy">
+              <h3>Lipat &amp; fleksibel</h3>
+              <p>Layar lebih luas dalam bodi yang bisa dilipat.</p>
+            </a>
+            <a class="tile rv" href="products.html">
+              <img src="assets/images/products/galaxy-s26.jpg" alt="Galaxy S26 warna hitam tampak depan dan belakang" loading="lazy">
+              <h3>Ringkas &amp; harian</h3>
+              <p>Mulai dengan Galaxy AI di ukuran yang pas.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="strip" aria-hidden="true">
+        <div>KAMERA • LAYAR • KINERJA • DESAIN • KAMERA • LAYAR • KINERJA • DESAIN • KAMERA • LAYAR • KINERJA • DESAIN •</div>
+      </div>
+      <!-- Section: Tiga hal yang kami utamakan -->
+      <section class="sec">
+        <div class="wrap">
+          <h2 class="rv">Tiga hal yang kami utamakan</h2>
+          <div class="trio vals">
+            <div class="tile rv">
+              <h3>Kamera yang tajam</h3>
+              <p>Hasil foto dan video yang jelas, dari pencahayaan terang hingga redup.</p>
+            </div>
+            <div class="tile rv">
+              <h3>Layar yang nyaman</h3>
+              <p>Ukuran layar dan bobot memengaruhi seberapa betah Anda memakainya.</p>
+            </div>
+            <div class="tile rv">
+              <h3>Mudah dibawa</h3>
+              <p>Ringkas, ada yang bisa dilipat, dan siap menemani perjalanan harian.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Bingung memilih? Ikuti langkah ini -->
+      <section class="sec sec--alt">
+        <div class="wrap">
+          <h2 class="rv">Bingung memilih? Ikuti langkah ini</h2>
+          <ol class="steps">
+            <li class="rv">
+              <h3>Tentukan kebutuhan utama</h3>
+              <p>Untuk kamera dan produktivitas, lihat seri Ultra. Untuk harian yang ringkas, seri S sudah cukup.</p>
+            </li>
+            <li class="rv">
+              <h3>Cek ukuran dan bentuk</h3>
+              <p>Pilih bodi biasa atau lipat sesuai kenyamanan di tangan dan di saku Anda.</p>
+            </li>
+            <li class="rv">
+              <h3>Bandingkan fitur</h3>
+              <p>Buka halaman Products dan Technology untuk melihat fitur tiap model.</p>
+            </li>
+            <li class="rv">
+              <h3>Cek harga resmi</h3>
+              <p>Harga berubah-ubah. Lihat situs resmi Samsung atau toko resmi sebelum membeli.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Section: Pertanyaan umum -->
+      <section class="sec">
+        <div class="wrap narrow">
+          <h2 class="rv">Pertanyaan umum</h2>
+          <div class="faq">
+            <details class="rv">
+              <summary>Apakah semua ponsel Galaxy bisa dilipat?</summary>
+              <p>Tidak. Hanya seri Z, seperti Fold8 dan Flip8. Lihat tabel di halaman Products.</p>
+            </details>
+            <details class="rv">
+              <summary>Apakah situs ini resmi?</summary>
+              <p>Bukan. Ini proyek desain tidak resmi dan tidak berafiliasi dengan Samsung.</p>
+            </details>
+            <details class="rv">
+              <summary>Di mana saya bisa membeli?</summary>
+              <p>Gunakan situs resmi Samsung atau toko resmi di negara Anda.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Siap merasakan bedanya? -->
+      <section class="cta">
+        <div class="wrap">
+          <h2 class="rv">Siap merasakan bedanya?</h2>
+          <p class="rv">Jelajahi koleksi dan temukan Galaxy yang cocok untuk Anda.</p>
+          <a class="btn btn--red rv" href="products.html">Lihat koleksi</a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="foot">
+      <div>
+        <strong>GALAXY NOVA</strong>
+        <p>Kenali lebih dekat dunia Samsung Galaxy bersama GALAXY NOVA. Dibuat untuk berbagi informasi dan mengenal teknologi lebih jauh.</p>
+        <p>📍 lokasi : indonesia</p>
+        <a
+        href="https://maps.google.com/?q=samsung+indonesia"
+        target="_blank">lihat lokasi di google maps</a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="about.html">About Galaxy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+    <!-- Elemen cahaya peri -->
+    <div class="fairy-cursor" id="fairycursor">
+    </div>
+     <div class="fairy-particles" 
+     id="fairyparticles"></div>
+
+     <!--Hubungkan JavaScript -->
+    <script src="script.js"></script>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
